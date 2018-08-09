@@ -4,10 +4,29 @@
     <meta charset="utf-8">
     <title>Issue Tracker</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Muli:100,200,400,600,700" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   </head>
   <body>
     <main class="container">
+      <section>
+        <div class="row">
+          <div class="col-centered">
+            <h1>Add New</h1>
+            <hr/>
+              <textarea id="js-issue-description-input" class="form-control pull-left issue-input" rows="5" placeholder="Add description..." required autofocus=""></textarea>
+              <div class="dropdown">
+                  <button class="btn btn-default btn-block dropdown-toggle" type="button" data-toggle="dropdown">Low
+                  <span class="caret"></span></button>
+                  <ul class="dropdown-menu">
+                  </ul>
+               </div>
+             <input type="text" id="js-issue-assignee-input" placeholder="Add assignee..." class="form-control pull-left issue-input" autofocus />
+             <button type="button" id="js-add-issue-button" class="btn btn-info pull-right">Save</button>
+           </div>
+        </div>
+      </section>
     </main>
   </body>
 </html>
+

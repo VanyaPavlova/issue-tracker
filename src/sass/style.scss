@@ -1,8 +1,37 @@
-@import url('https://fonts.googleapis.com/css?family=Oxygen:100,200,400,600,700');
-$font-stack: 'Oxygen', sans-serif;
+$font-stack: 'Muli', sans-serif;
 $background: #fff;
+
 body {
   font-family: $font-stack;
   background: $background;
 }
 
+.row {
+  padding-right: 15%;
+  padding-left: 15%;
+}
+
+.col-centered {
+  margin:0 auto;
+}
+
+.form-control {
+  margin-bottom:20px;
+}
+
+.btn-block {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.btn .caret {
+}
+
+@media only screen and (min-width: 768px)  {
+  .col-centered {
+    max-width:50%;
+  }
+  .btn {
+    min-width:80px;
+  }
+}

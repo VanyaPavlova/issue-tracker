@@ -14,14 +14,22 @@
           <div class="col-centered">
             <h1>Add New</h1>
             <hr/>
-              <textarea id="js-issue-description-input" class="form-control pull-left issue-input" rows="5" placeholder="Add description..." required autofocus=""></textarea>
-              <div class="dropdown">
-                  <button class="btn btn-default btn-block dropdown-toggle" type="button" data-toggle="dropdown">Low
-                  <span class="caret"></span></button>
-                  <ul class="dropdown-menu">
-                  </ul>
-               </div>
-             <input type="text" id="js-issue-assignee-input" placeholder="Add assignee..." class="form-control pull-left issue-input" autofocus />
+              <div class="form-group">
+                <label for="js-issue-description-input" class="form-label">Description</label>
+                <input type="text" id="js-issue-description-input" class="form-control pull-left" autofocus></input>
+              </div>
+              <div class="form-group">
+                <label for="js-issue-severity-dropdown">Severity</label>
+                  <select id="issueSeverityInput" class="form-control">
+                    <option value="Low">Low</option>
+                    <option value="Medium">Medium</option>
+                    <option value="High">High</option>
+                  </select>
+              </div>
+              <div class="form-group">
+                <label for="js-issue-assignee--input">Assign to</label>
+                <input type="text" id="js-issue-assignee-input" class="form-control pull-left" autofocus />
+              </div>
              <button type="button" id="js-add-issue-button" class="btn btn-info pull-right">Save</button>
            </div>
         </div>

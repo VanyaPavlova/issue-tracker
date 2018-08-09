@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Oxygen:100,200,400,600,700');
+$font-stack: 'Oxygen', sans-serif;
+$background: #fff;
+body {
+  font-family: $font-stack;
+  background: $background;
+}
+

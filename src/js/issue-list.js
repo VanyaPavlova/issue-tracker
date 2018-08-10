@@ -12,12 +12,12 @@ export class IssueList {
      this.ul = ul;
   }
 
-  addItem(value = '') {
-    if (!value) {
+  addItem(description = '',assigned = '', severity = '') {
+    if (!description && !assigned) {
       return;
     }
-    const issue = new Issue ({ description: description, severity: "Low", assigned:assigned });
-    this.issue.push(issue);
+    const issue = new Issue ({ description: description, assigned:assigned, severity:severity});
+    this.issues.push(issue);
   }
 
   removeItem(index) {

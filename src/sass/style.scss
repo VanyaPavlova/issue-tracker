@@ -1,9 +1,15 @@
 $font-stack: 'Muli', sans-serif;
-$background: #fff;
+$background: #ffffff;
+$border: #eee;
 
 body {
   font-family: $font-stack;
   background: $background;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
 }
 
 .row {
@@ -27,11 +33,27 @@ body {
   padding-bottom: 7px;
 }
 
-@media only screen and (min-width: 768px)  {
+.item-default-view {
+  border-left: 1px solid $border;
+  border-bottom: 1px solid $border;
+  background-color:$background;
+  padding: 10px 10px 50px 10px;
+}
+
+.item-default-header-label {
+  display:list-item;
+  font-weight:500;
+  text-transform: uppercase;
+}
+
+.item-default-content-label {
+  display:list-item;
+  font-weight:200;
+}
+
+@media only screen and (min-width: 1024px)  {
   .col-centered {
     max-width:50%;
   }
-  .btn {
-    min-width:80px;
-  }
 }
+
